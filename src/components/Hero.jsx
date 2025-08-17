@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
-// Import from your centralized assets index - this matches your project pattern!
-import { profile } from '../assets';
+// FIXED: Import profile directly instead of from assets barrel
+import profile from '../assets/profile/profile.png';
 
 const Hero = () => {
   const [displayedTitle, setDisplayedTitle] = useState('');
