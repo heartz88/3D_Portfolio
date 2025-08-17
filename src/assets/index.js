@@ -2,15 +2,15 @@
 import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
-import favicon from "./favicon.ico";
+// Remove favicon import - it's in public folder
 import github from "./github.png";
 import logo from "./logo.png";
 import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
-//Profile image - FIXED: Use relative path
-import profile from "./profile/profile.png";
+//Profile image
+import profile from "./profile/profile.png"; // Fixed path
 
 //Tech logos
 import bootstrap from "./tech/bootstrap.png";
@@ -43,7 +43,7 @@ import tesla from "./company/tesla.png";
 import blueprintbrief from "./blueprintbrief.png";
 
 export {
-  backend, blueprint, blueprintbrief, bootstrap, close, creator, css, django, docker, favicon, figma,
+  backend, blueprint, blueprintbrief, bootstrap, close, creator, css, django, docker, figma,
   git, github, html, java, javascript, logo, menu, mobile, mongodb,
   nodejs, postgresql, profile, python, reactjs,
   redux, shopify,
