@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
+// Import from your centralized assets index - this matches your project pattern!
+import { profile } from '../assets';
+
 const Hero = () => {
   const [displayedTitle, setDisplayedTitle] = useState('');
   const [displayedSubtitle, setDisplayedSubtitle] = useState('');
@@ -115,7 +118,7 @@ const Hero = () => {
             <Motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
-              src="/profile.png"
+              src={profile}
               alt="David's Profile"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover rounded-full z-10"
               loading="eager"
