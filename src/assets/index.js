@@ -39,11 +39,15 @@ import tesla from "./company/tesla.png";
 //Project images
 import blueprintbrief from "./blueprintbrief.png";
 
+
+// Profile image
+import profile from "./profile/profile.png";
+
 export {
   backend, blueprint, blueprintbrief, bootstrap, close, creator, css, django, docker,
   figma,
   git, github, html, java, javascript, logo, menu, mobile, mongodb,
-  nodejs, postgresql, python, reactjs,
+  nodejs, postgresql, profile, python, reactjs,
   redux, shopify,
   starbucks, superdrug, tailwind, tesla, threejs, typescript, web
 };

@@ -16,7 +16,7 @@ import {
   tailwind,
   threejs,
   typescript,
-  web
+  web,
 } from "../assets";
 
 export const navLinks = [
@@ -156,12 +156,12 @@ const projects = [
     and educational blog content to make law accessible to everyone.`,
     tags: [
       {
-        name: "django",
-        color: "green-text-gradient",
+        name: "python",
+        color: "yellow-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
+        name: "postgresql",
+        color: "teal-text-gradient",
       },
       {
         name: "bootstrap",
@@ -179,3 +179,4 @@ const projects = [
 ];
 
 export { experiences, projects, services, technologies, testimonials };
+
