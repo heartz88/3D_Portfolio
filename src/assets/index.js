@@ -10,7 +10,7 @@ import mobile from "./mobile.png";
 import web from "./web.png";
 
 //Profile image
-import profile from "./profile/profile.png";
+import profile from "src/assets/profile/profile.png";
 
 //Tech logos
 import bootstrap from "./tech/bootstrap.png";
