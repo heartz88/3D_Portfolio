@@ -3,6 +3,9 @@ import { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
+// Import the profile image properly
+import profileImage from '../assets/profile/profile.png';
+
 const Hero = () => {
   const [displayedTitle, setDisplayedTitle] = useState('');
   const [displayedSubtitle, setDisplayedSubtitle] = useState('');
@@ -44,6 +47,7 @@ const Hero = () => {
       clearInterval(cursorTimer);
     };
   }, []);
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5 z-10 pointer-events-none`}>
@@ -116,9 +120,10 @@ const Hero = () => {
             <Motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
-              src="src\assets\profile\profile.png"
+              src={profileImage}  // Use the imported image instead of string path
               alt="David's Profile"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover rounded-full z-10"
+              loading="eager"  // Load immediately since it's above the fold
             />
             
             {/* Floating particles effect */}
