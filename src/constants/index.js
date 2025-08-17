@@ -1,4 +1,33 @@
-import {
+// Import assets with error handling
+let assets = {};
+try {
+  assets = await import("../assets");
+} catch (error) {
+  console.error("Error importing assets:", error);
+  // Fallback empty objects
+  assets = {
+    backend: '',
+    blueprint: '',
+    blueprintbrief: '',
+    bootstrap: '',
+    django: '',
+    html: '',
+    java: '',
+    javascript: '',
+    mongodb: '',
+    nodejs: '',
+    postgresql: '',
+    python: '',
+    reactjs: '',
+    superdrug: '',
+    tailwind: '',
+    threejs: '',
+    typescript: '',
+    web: ''
+  };
+}
+
+const {
   backend,
   blueprint,
   blueprintbrief,
@@ -17,9 +46,10 @@ import {
   threejs,
   typescript,
   web
-} from "../assets";
+} = assets;
 
-const navLinks = [
+// Navigation links - safe static data
+export const navLinks = [
   {
     id: "about",
     title: "About",
@@ -34,77 +64,80 @@ const navLinks = [
   },
 ];
 
-const services = [
+// Services - using safe fallback
+export const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: web || '',
   },
   {
     title: "Backend Developer",
-    icon: backend,
+    icon: backend || '',
   },
 ];
 
-const technologies = [
+// Technologies with safe fallbacks
+export const technologies = [
   {
     name: "PostgreSQL",
-    icon: postgresql,
+    icon: postgresql || '',
   },
   {
     name: "Bootstrap",
-    icon: bootstrap,
+    icon: bootstrap || '',
   },
   {
     name: "Django",
-    icon: django,
+    icon: django || '',
   },
   {
     name: "Java",
-    icon: java,
+    icon: java || '',
   },
   {
     name: "Python",
-    icon: python,
+    icon: python || '',
   },
   {
     name: "HTML 5",
-    icon: html,
+    icon: html || '',
   },
   {
     name: "JavaScript",
-    icon: javascript,
+    icon: javascript || '',
   },
   {
     name: "TypeScript",
-    icon: typescript,
+    icon: typescript || '',
   },
   {
     name: "React JS",
-    icon: reactjs,
+    icon: reactjs || '',
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind,
+    icon: tailwind || '',
   },
   {
     name: "Node JS",
-    icon: nodejs,
+    icon: nodejs || '',
   },
   {
     name: "MongoDB",
-    icon: mongodb,
+    icon: mongodb || '',
   },
   {
     name: "Three JS",
-    icon: threejs,
+    icon: threejs || '',
   },
 ];
 
-const experiences = [
+// Experiences
+export const experiences = [
   {
     title: "Digital Solutions Developer | Intern",
     company_name: "Superdrug",
-    icon: superdrug,
+    icon: superdrug || '',
     iconBg: "#E6DEDD",
     date: "May 2025 - July 2025",
     points: [
@@ -116,7 +149,7 @@ const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "The Blueprint Brief",
-    icon: blueprint,
+    icon: blueprint || '',
     iconBg: "#E6DEDD",
     date: "May 2025 - Present",
     points: [
@@ -127,7 +160,8 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+// Testimonials - no asset dependencies
+export const testimonials = [
   {
     testimonial:
       "Very professional and dedicated to their work. They delivered a high-quality product on time with good timing. Loved working along side him!",
@@ -146,7 +180,8 @@ const testimonials = [
   },
 ];
 
-const projects = [
+// Projects
+export const projects = [
   {
     name: "The Blueprint Brief",
     description:
@@ -172,23 +207,8 @@ const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: blueprintbrief,
+    image: blueprintbrief || '',
     source_code_link: "https://theblueprintbrief.com/",
     isWebsite: true,
   },
 ];
-
-// Use a default export with all constants
-const constants = {
-  navLinks,
-  services,
-  technologies,
-  experiences,
-  testimonials,
-  projects
-};
-
-export default constants;
-
-// Also export individually for backward compatibility
-export { experiences, navLinks, projects, services, technologies, testimonials };
