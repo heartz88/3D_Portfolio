@@ -9,8 +9,8 @@ import menu from "./menu.svg";
 import mobile from "./mobile.png";
 import web from "./web.png";
 
-//Profile image
-import profile from "src/assets/profile/profile.png";
+//Profile image - FIXED: Use relative path
+import profile from "./profile/profile.png";
 
 //Tech logos
 import bootstrap from "./tech/bootstrap.png";
@@ -49,4 +49,3 @@ export {
   redux, shopify,
   starbucks, superdrug, tailwind, tesla, threejs, typescript, web
 };
-

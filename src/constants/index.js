@@ -16,7 +16,7 @@ import {
   tailwind,
   threejs,
   typescript,
-  web,
+  web
 } from "../assets";
 
 export const navLinks = [
