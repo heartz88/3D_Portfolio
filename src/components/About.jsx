@@ -1,5 +1,5 @@
 
-import { Tilt } from 'react-tilt';
+import Tilt from 'react-parallax-tilt';
 
 import { motion as Motion } from 'framer-motion';
 import { services } from '../constants';
