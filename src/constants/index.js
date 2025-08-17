@@ -1,3 +1,4 @@
+// src/constants/index.js
 // Direct imports - no barrel exports, no async imports
 import backend from "../assets/backend.png";
 import blueprintbrief from "../assets/blueprintbrief.png";
@@ -18,7 +19,8 @@ import threejs from "../assets/tech/threejs.svg";
 import typescript from "../assets/tech/typescript.png";
 import web from "../assets/web.png";
 
-export const navLinks = [
+// Navigation links
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -33,7 +35,8 @@ export const navLinks = [
   },
 ];
 
-export const services = [
+// Services data
+const services = [
   {
     title: "Web Developer",
     icon: web,
@@ -44,7 +47,8 @@ export const services = [
   },
 ];
 
-export const technologies = [
+// Technologies data
+const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql,
@@ -99,7 +103,8 @@ export const technologies = [
   },
 ];
 
-export const experiences = [
+// Experience data
+const experiences = [
   {
     title: "Digital Solutions Developer | Intern",
     company_name: "Superdrug",
@@ -121,12 +126,13 @@ export const experiences = [
     points: [
       "Developing and maintaining website using Python specifically the Django library.",
       "Collaborating with other developers in achieving the main goal of making the website visually stunning and functional.",
-      "Contributed to most of the styling, views and currently looking at the flow of the website .",
+      "Contributed to most of the styling, views and currently looking at the flow of the website.",
     ],
   },
 ];
 
-export const testimonials = [
+// Testimonials data
+const testimonials = [
   {
     testimonial:
       "Very professional and dedicated to their work. They delivered a high-quality product on time with good timing. Loved working along side him!",
@@ -137,7 +143,7 @@ export const testimonials = [
   },
   {
     testimonial:
-    `David showcased remarkable adaptability by handling various languages and technologies, playing a key role in a website launch that gained over a thousand newsletter subscribers in its first month.`,
+      "David showcased remarkable adaptability by handling various languages and technologies, playing a key role in a website launch that gained over a thousand newsletter subscribers in its first month.",
     name: "Abdifatah Mahamed",
     designation: "Co-founder",
     company: "The Blueprint Brief",
@@ -145,14 +151,12 @@ export const testimonials = [
   },
 ];
 
-export const projects = [
+// Projects data
+const projects = [
   {
     name: "The Blueprint Brief",
     description:
-    `A multimedia legal education platform that simplifies complex legal information,
-    news, and laws for students and aspiring legal professionals.
-    Features legal insights, commercial news analysis,
-    and educational blog content to make law accessible to everyone.`,
+      "A multimedia legal education platform that simplifies complex legal information, news, and laws for students and aspiring legal professionals. Features legal insights, commercial news analysis, and educational blog content to make law accessible to everyone.",
     tags: [
       {
         name: "python",
@@ -176,3 +180,9 @@ export const projects = [
     isWebsite: true,
   },
 ];
+
+// Export all constants
+export {
+  experiences, navLinks, projects, services,
+  technologies, testimonials
+};

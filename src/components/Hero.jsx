@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
-// TEMPORARILY COMMENTED OUT FOR DEBUGGING
-// import profile from '../assets/profile/profile.png';
+// FIXED: Import profile directly instead of from assets barrel
+import profile from '../assets/profile/profile.png';
 
 const Hero = () => {
   const [displayedTitle, setDisplayedTitle] = useState('');
@@ -115,20 +115,14 @@ const Hero = () => {
               <div className="w-full h-full rounded-full bg-black-100" />
             </Motion.div>
             
-            {/* TEMPORARILY COMMENTED OUT FOR DEBUGGING */}
-            {/* <Motion.img
+            <Motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
               src={profile}
               alt="David's Profile"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover rounded-full z-10"
               loading="eager"
-            /> */}
-            
-            {/* TEMPORARY PLACEHOLDER */}
-            <div className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] bg-gray-400 rounded-full z-10 flex items-center justify-center text-white">
-              Profile
-            </div>
+            />
             
             <Motion.div
               animate={{ y: [-10, 10, -10] }}

@@ -13,8 +13,7 @@ export default defineConfig({
           three: ['three', '@react-three/fiber', '@react-three/drei'],
           // Animation libraries
           animations: ['framer-motion', 'react-parallax-tilt'],
-          // Math and utility libraries
-          utils: ['maath'],
+          // Math and utility libraries - removed 'maath' from here to avoid conflicts
         }
       }
     },
@@ -23,7 +22,7 @@ export default defineConfig({
     minify: 'terser',
     chunkSizeWarningLimit: 1000,
     // Optimize asset handling
-    assetsInlineLimit: 4096, 
+    assetsInlineLimit: 4096,
   },
   // Optimize images or other assets
   assetsInclude: ['**/*.glb', '**/*.gltf', '**/*.hdr'],
@@ -35,8 +34,7 @@ export default defineConfig({
       '@': '/src'
     }
   },
-
   optimizeDeps: {
-    include: ['framer-motion', 'react-parallax-tilt', 'three']
+    include: ['framer-motion', 'react-parallax-tilt', 'three', 'maath']
   }
 })
