@@ -23,14 +23,14 @@ const WebIcon = () => (
       strokeLinecap="round" 
       strokeLinejoin="round"
     />
-    <polyline 
+    <polyline
       points="15,3 21,3 21,9" 
       stroke="white" 
       strokeWidth="2" 
       strokeLinecap="round" 
       strokeLinejoin="round"
     />
-    <line 
+    <line
       x1="10" 
       y1="14" 
       x2="21" 
