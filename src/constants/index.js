@@ -1,54 +1,23 @@
-// Import assets with error handling
-let assets = {};
-try {
-  assets = await import("../assets");
-} catch (error) {
-  console.error("Error importing assets:", error);
-  // Fallback empty objects
-  assets = {
-    backend: '',
-    blueprint: '',
-    blueprintbrief: '',
-    bootstrap: '',
-    django: '',
-    html: '',
-    java: '',
-    javascript: '',
-    mongodb: '',
-    nodejs: '',
-    postgresql: '',
-    python: '',
-    reactjs: '',
-    superdrug: '',
-    tailwind: '',
-    threejs: '',
-    typescript: '',
-    web: ''
-  };
-}
+// Direct imports - no barrel exports, no async imports
+import backend from "../assets/backend.png";
+import blueprintbrief from "../assets/blueprintbrief.png";
+import blueprint from "../assets/company/blueprint.png";
+import superdrug from "../assets/company/superdrug.png";
+import bootstrap from "../assets/tech/bootstrap.png";
+import django from "../assets/tech/django.png";
+import html from "../assets/tech/html.png";
+import java from "../assets/tech/java.png";
+import javascript from "../assets/tech/javascript.png";
+import mongodb from "../assets/tech/mongodb.png";
+import nodejs from "../assets/tech/nodejs.png";
+import postgresql from "../assets/tech/postgresql.png";
+import python from "../assets/tech/python.png";
+import reactjs from "../assets/tech/reactjs.png";
+import tailwind from "../assets/tech/tailwind.png";
+import threejs from "../assets/tech/threejs.svg";
+import typescript from "../assets/tech/typescript.png";
+import web from "../assets/web.png";
 
-const {
-  backend,
-  blueprint,
-  blueprintbrief,
-  bootstrap,
-  django,
-  html,
-  java,
-  javascript,
-  mongodb,
-  nodejs,
-  postgresql,
-  python,
-  reactjs,
-  superdrug,
-  tailwind,
-  threejs,
-  typescript,
-  web
-} = assets;
-
-// Navigation links - safe static data
 export const navLinks = [
   {
     id: "about",
@@ -64,80 +33,77 @@ export const navLinks = [
   },
 ];
 
-// Services - using safe fallback
 export const services = [
   {
     title: "Web Developer",
-    icon: web || '',
+    icon: web,
   },
   {
     title: "Backend Developer",
-    icon: backend || '',
+    icon: backend,
   },
 ];
 
-// Technologies with safe fallbacks
 export const technologies = [
   {
     name: "PostgreSQL",
-    icon: postgresql || '',
+    icon: postgresql,
   },
   {
     name: "Bootstrap",
-    icon: bootstrap || '',
+    icon: bootstrap,
   },
   {
     name: "Django",
-    icon: django || '',
+    icon: django,
   },
   {
     name: "Java",
-    icon: java || '',
+    icon: java,
   },
   {
     name: "Python",
-    icon: python || '',
+    icon: python,
   },
   {
     name: "HTML 5",
-    icon: html || '',
+    icon: html,
   },
   {
     name: "JavaScript",
-    icon: javascript || '',
+    icon: javascript,
   },
   {
     name: "TypeScript",
-    icon: typescript || '',
+    icon: typescript,
   },
   {
     name: "React JS",
-    icon: reactjs || '',
+    icon: reactjs,
   },
   {
     name: "Tailwind CSS",
-    icon: tailwind || '',
+    icon: tailwind,
   },
   {
     name: "Node JS",
-    icon: nodejs || '',
+    icon: nodejs,
   },
   {
     name: "MongoDB",
-    icon: mongodb || '',
+    icon: mongodb,
   },
   {
     name: "Three JS",
-    icon: threejs || '',
+    icon: threejs,
   },
 ];
 
-// Experiences
 export const experiences = [
   {
     title: "Digital Solutions Developer | Intern",
     company_name: "Superdrug",
-    icon: superdrug || '',
+    icon: superdrug,
     iconBg: "#E6DEDD",
     date: "May 2025 - July 2025",
     points: [
@@ -149,7 +115,7 @@ export const experiences = [
   {
     title: "Full Stack Developer",
     company_name: "The Blueprint Brief",
-    icon: blueprint || '',
+    icon: blueprint,
     iconBg: "#E6DEDD",
     date: "May 2025 - Present",
     points: [
@@ -160,7 +126,6 @@ export const experiences = [
   },
 ];
 
-// Testimonials - no asset dependencies
 export const testimonials = [
   {
     testimonial:
@@ -180,7 +145,6 @@ export const testimonials = [
   },
 ];
 
-// Projects
 export const projects = [
   {
     name: "The Blueprint Brief",
@@ -207,7 +171,7 @@ export const projects = [
         color: "orange-text-gradient",
       },
     ],
-    image: blueprintbrief || '',
+    image: blueprintbrief,
     source_code_link: "https://theblueprintbrief.com/",
     isWebsite: true,
   },
