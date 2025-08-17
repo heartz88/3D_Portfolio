@@ -34,7 +34,7 @@ export const navLinks = [
   },
 ];
 
-const services = [
+export const services = [
   {
     title: "Web Developer",
     icon: web,
@@ -45,16 +45,16 @@ const services = [
   },
 ];
 
-const technologies = [
+export const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql,
   },
-    {
+  {
     name: "Bootstrap",
     icon: bootstrap,
   },
-    {
+  {
     name: "Django",
     icon: django,
   },
@@ -62,7 +62,7 @@ const technologies = [
     name: "Java",
     icon: java,
   },
-    {
+  {
     name: "Python",
     icon: python,
   },
@@ -100,7 +100,7 @@ const technologies = [
   },
 ];
 
-const experiences = [
+export const experiences = [
   {
     title: "Digital Solutions Developer | Intern",
     company_name: "Superdrug",
@@ -113,7 +113,7 @@ const experiences = [
       "Created solutions for one of which was making an Impex file Generator.",
     ],
   },
-    {
+  {
     title: "Full Stack Developer",
     company_name: "The Blueprint Brief",
     icon: blueprint,
@@ -127,7 +127,7 @@ const experiences = [
   },
 ];
 
-const testimonials = [
+export const testimonials = [
   {
     testimonial:
       "Very professional and dedicated to their work. They delivered a high-quality product on time with good timing. Loved working along side him!",
@@ -136,7 +136,7 @@ const testimonials = [
     company: "The Blueprint Brief",
     image: "https://res.cloudinary.com/dxgqxseek/image/upload/v1/dxnghol8fpcv6lhhoudr.jpg",
   },
-    {
+  {
     testimonial:
     `David showcased remarkable adaptability by handling various languages and technologies, playing a key role in a website launch that gained over a thousand newsletter subscribers in its first month.`,
     name: "Abdifatah Mahamed",
@@ -146,7 +146,7 @@ const testimonials = [
   },
 ];
 
-const projects = [
+export const projects = [
   {
     name: "The Blueprint Brief",
     description:
@@ -177,6 +177,3 @@ const projects = [
     isWebsite: true,
   },
 ];
-
-export { experiences, projects, services, technologies, testimonials };
-
