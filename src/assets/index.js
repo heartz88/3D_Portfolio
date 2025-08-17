@@ -2,6 +2,7 @@
 import backend from "./backend.png";
 import close from "./close.svg";
 import creator from "./creator.png";
+import favicon from "./favicon.png";
 import github from "./github.png";
 import logo from "./logo.png";
 import menu from "./menu.svg";
@@ -44,8 +45,7 @@ import blueprintbrief from "./blueprintbrief.png";
 import profile from "./profile/profile.png";
 
 export {
-  backend, blueprint, blueprintbrief, bootstrap, close, creator, css, django, docker,
-  figma,
+  backend, blueprint, blueprintbrief, bootstrap, close, creator, css, django, docker, favicon, figma,
   git, github, html, java, javascript, logo, menu, mobile, mongodb,
   nodejs, postgresql, profile, python, reactjs,
   redux, shopify,
