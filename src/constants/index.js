@@ -19,7 +19,7 @@ import {
   web
 } from "../assets";
 
-export const navLinks = [
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -34,7 +34,7 @@ export const navLinks = [
   },
 ];
 
-export const services = [
+const services = [
   {
     title: "Web Developer",
     icon: web,
@@ -45,7 +45,7 @@ export const services = [
   },
 ];
 
-export const technologies = [
+const technologies = [
   {
     name: "PostgreSQL",
     icon: postgresql,
@@ -100,7 +100,7 @@ export const technologies = [
   },
 ];
 
-export const experiences = [
+const experiences = [
   {
     title: "Digital Solutions Developer | Intern",
     company_name: "Superdrug",
@@ -127,7 +127,7 @@ export const experiences = [
   },
 ];
 
-export const testimonials = [
+const testimonials = [
   {
     testimonial:
       "Very professional and dedicated to their work. They delivered a high-quality product on time with good timing. Loved working along side him!",
@@ -146,7 +146,7 @@ export const testimonials = [
   },
 ];
 
-export const projects = [
+const projects = [
   {
     name: "The Blueprint Brief",
     description:
@@ -177,3 +177,18 @@ export const projects = [
     isWebsite: true,
   },
 ];
+
+// Use a default export with all constants
+const constants = {
+  navLinks,
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects
+};
+
+export default constants;
+
+// Also export individually for backward compatibility
+export { experiences, navLinks, projects, services, technologies, testimonials };
