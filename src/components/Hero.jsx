@@ -115,7 +115,7 @@ const Hero = () => {
             <Motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
-              src="/profile.png"  // NOW USING PUBLIC FOLDER PATH - This will work in production!
+              src="public/profile.png"  // NOW USING PUBLIC FOLDER PATH - This will work in production!
               alt="David's Profile"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover rounded-full z-10"
               loading="eager"
