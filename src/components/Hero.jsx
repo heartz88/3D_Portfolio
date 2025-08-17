@@ -3,9 +3,6 @@ import { useEffect, useState } from 'react';
 import { styles } from '../styles';
 import { ComputersCanvas } from './canvas';
 
-// Import the profile image properly
-import profileImage from '../assets/profile/profile.png';
-
 const Hero = () => {
   const [displayedTitle, setDisplayedTitle] = useState('');
   const [displayedSubtitle, setDisplayedSubtitle] = useState('');
@@ -15,7 +12,6 @@ const Hero = () => {
   const subtitleText = "Creative full-stack developer crafting sleek interfaces and seamless web experiences.";
 
   useEffect(() => {
-    // Title typing effect
     let titleIndex = 0;
     const titleTimer = setInterval(() => {
       if (titleIndex < titleText.length) {
@@ -23,7 +19,6 @@ const Hero = () => {
         titleIndex++;
       } else {
         clearInterval(titleTimer);
-        // Start subtitle after title is done
         let subtitleIndex = 0;
         const subtitleTimer = setInterval(() => {
           if (subtitleIndex < subtitleText.length) {
@@ -120,13 +115,12 @@ const Hero = () => {
             <Motion.img
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
-              src={profileImage}  // Use the imported image instead of string path
+              src="/profile.png"  // NOW USING PUBLIC FOLDER PATH - This will work in production!
               alt="David's Profile"
               className="absolute inset-[2px] w-[calc(100%-4px)] h-[calc(100%-4px)] object-cover rounded-full z-10"
-              loading="eager"  // Load immediately since it's above the fold
+              loading="eager"
             />
             
-            {/* Floating particles effect */}
             <Motion.div
               animate={{ y: [-10, 10, -10] }}
               transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
