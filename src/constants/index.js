@@ -155,6 +155,32 @@ const testimonials = [
 // Projects data
 const projects = [
   {
+    name: "TrackBackAI",
+    description:
+      "A music collaboration platform that helps producers finish unfinished tracks. Combines Music Information Retrieval (automatic BPM, key, and energy analysis) with asynchronous collaboration, real-time messaging via Socket.IO, and cloud audio storage. Deployed microservices architecture with a React frontend, Node.js API, and Python analysis service.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "nodejs",
+        color: "green-text-gradient",
+      },
+      {
+        name: "python",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "teal-text-gradient",
+      },
+    ],
+    image: trackbackai,
+    source_code_link: "https://github.com/heartz88/trackback-ai",
+    live_site_link: "https://trackbackai.me",
+  },
+  {
     name: "The Blueprint Brief",
     description:
       "A multimedia legal education platform that simplifies complex legal information, news, and laws for students and aspiring legal professionals. Features legal insights, commercial news analysis, and educational blog content to make law accessible to everyone.",
@@ -180,32 +206,6 @@ const projects = [
     source_code_link: "https://theblueprintbrief.com/",
     isWebsite: true,
   },
-  {
-    name: "TrackBack AI",
-    description:
-      "A music collaboration platform that helps producers finish unfinished tracks. Combines Music Information Retrieval (automatic BPM, key, and energy analysis via Librosa) with asynchronous collaboration tools, real-time messaging, and cloud audio storage. Built as a deployed microservices architecture.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "nodejs",
-        color: "green-text-gradient",
-      },
-      {
-        name: "python",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "postgresql",
-        color: "teal-text-gradient",
-      },
-    ],
-    image: trackbackai,
-    source_code_link: "https://trackbackai.me/",
-    isWebsite: true,
-  },
 ];
 
 // Export all constants
@@ -213,4 +213,3 @@ export {
   experiences, navLinks, projects, services,
   technologies, testimonials
 };
-
